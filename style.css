@@ -153,11 +153,11 @@ body {
   z-index: 10;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space between left and right groups */
+  justify-content: space-between;
   border-top: 1px solid #A020F0;
   box-shadow: 0 -2px 10px rgba(160, 32, 240, 0.3);
   flex-wrap: nowrap;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
   overflow-y: hidden;
   padding: 0 15px;
   box-sizing: border-box;
@@ -175,7 +175,7 @@ body {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  margin-left: 10px; /* Slight offset to the right */
+  margin-left: 10px;
 }
 
 /* Logo in the navigation bar */
@@ -392,6 +392,213 @@ body {
   text-align: center;
 }
 
+/* Responsive adjustments for Chromebooks and smaller screens */
+@media (max-width: 1366px) {
+  .nav-bar {
+    padding: 0 8px; /* Tighter padding */
+    flex-wrap: wrap; /* Allow wrapping to prevent overflow */
+    height: auto; /* Allow height to adjust */
+    min-height: 60px; /* Maintain minimum height */
+  }
+
+  .nav-bar .left-group {
+    flex-shrink: 1; /* Allow shrinking */
+    min-width: 0; /* Prevent overflow */
+  }
+
+  .nav-bar .right-group {
+    flex-shrink: 1; /* Allow shrinking */
+    min-width: 0; /* Prevent overflow */
+    margin-left: 3px; /* Tighter margin */
+  }
+
+  .nav-bar .slogan {
+    max-width: 250px; /* Tighter slogan width */
+    font-size: 0.9rem; /* Smaller font */
+  }
+
+  .nav-bar h2 {
+    font-size: 1.2rem;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  .nav-bar .separator {
+    font-size: 1.2rem;
+    margin: 0 6px;
+  }
+
+  .nav-bar .nav-item {
+    font-size: 1rem;
+    margin: 0 6px;
+  }
+
+  .nav-bar .logo {
+    width: 32px;
+    height: 32px;
+    margin-left: 0;
+  }
+
+  .nav-bar .social-icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+  }
+
+  .nav-bar .version {
+    font-size: 0.9rem;
+    margin: 0 6px;
+  }
+
+  .nav-bar .star-slider {
+    width: 70px;
+    margin: 0 6px;
+  }
+
+  .nav-bar .battery-status {
+    font-size: 1rem;
+    margin: 0 6px;
+  }
+
+  .nav-bar .live-clock {
+    font-size: 1rem;
+    width: 80px;
+    margin: 0 6px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-bar {
+    padding: 0 6px;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 60px;
+  }
+
+  .nav-bar .slogan {
+    display: none; /* Hide slogan to save space */
+  }
+
+  .nav-bar h2 {
+    font-size: 1rem;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .nav-bar .separator {
+    font-size: 1rem;
+    margin: 0 5px;
+  }
+
+  .nav-bar .nav-item {
+    font-size: 0.9rem;
+    margin: 0 5px;
+  }
+
+  .nav-bar .logo {
+    width: 28px;
+    height: 28px;
+    margin-left: 0;
+  }
+
+  .nav-bar .social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 4px;
+  }
+
+  .nav-bar .version {
+    font-size: 0.8rem;
+    margin: 0 5px;
+  }
+
+  .nav-bar .star-slider {
+    width: 60px;
+    margin: 0 5px;
+  }
+
+  .nav-bar .battery-status {
+    font-size: 0.9rem;
+    margin: 0 5px;
+  }
+
+  .nav-bar .live-clock {
+    font-size: 0.9rem;
+    width: 70px;
+    margin: 0 5px;
+  }
+
+  .nav-bar .right-group {
+    margin-left: 2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-bar {
+    padding: 0 5px;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 60px;
+  }
+
+  .nav-bar .slogan {
+    display: none; /* Hide slogan */
+  }
+
+  .nav-bar h2 {
+    font-size: 0.9rem;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .nav-bar .separator {
+    font-size: 0.9rem;
+    margin: 0 4px;
+  }
+
+  .nav-bar .nav-item {
+    font-size: 0.8rem;
+    margin: 0 4px;
+  }
+
+  .nav-bar .logo {
+    width: 25px;
+    height: 25px;
+    margin-left: 0;
+  }
+
+  .nav-bar .social-icon {
+    width: 18px;
+    height: 18px;
+    margin: 0 3px;
+  }
+
+  .nav-bar .version {
+    font-size: 0.7rem;
+    margin: 0 4px;
+  }
+
+  .nav-bar .star-slider {
+    width: 50px;
+    margin: 0 4px;
+  }
+
+  .nav-bar .battery-status {
+    font-size: 0.8rem;
+    margin: 0 4px;
+  }
+
+  .nav-bar .live-clock {
+    font-size: 0.8rem;
+    width: 60px;
+    margin: 0 4px;
+  }
+
+  .nav-bar .right-group {
+    margin-left: 2px;
+  }
+}
+
 /* Responsive grid for smaller screens */
 @media (max-width: 1200px) {
   .games-grid {
@@ -418,48 +625,5 @@ body {
 
   .search-input {
     width: 200px;
-  }
-
-  .nav-bar .slogan {
-    max-width: 300px; /* Tighter for mobile */
-  }
-
-  .nav-bar {
-    padding: 0 10px;
-  }
-
-  .nav-bar .logo {
-    width: 35px;
-    height: 35px;
-    margin-left: 0;
-  }
-
-  .nav-bar h2,
-  .nav-bar .separator,
-  .nav-bar .nav-item,
-  .nav-bar .battery-status,
-  .nav-bar .live-clock {
-    font-size: 1rem;
-    margin: 0 10px;
-  }
-
-  .nav-bar .social-icon {
-    width: 25px;
-    height: 25px;
-    margin: 0 8px;
-  }
-
-  .nav-bar .version {
-    font-size: 0.9rem;
-    margin: 0 10px;
-  }
-
-  .nav-bar .star-slider {
-    width: 80px;
-    margin: 0 10px;
-  }
-
-  .nav-bar .right-group {
-    margin-left: 10px; /* Smaller offset for mobile */
   }
 }
