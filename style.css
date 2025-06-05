@@ -413,7 +413,7 @@ body {
   }
 
   .nav-bar .slogan {
-    max-width: 250px; /* Tighter slogan width */
+    max-width: 350px; /* Increased to show more text */
     font-size: 0.9rem; /* Smaller font */
   }
 
@@ -429,8 +429,8 @@ body {
   }
 
   .nav-bar .nav-item {
-    font-size: 1rem;
-    margin: 0 6px;
+    font-size: 0.9rem; /* Reduced to save space */
+    margin: 0 5px; /* Tighter margin */
   }
 
   .nav-bar .logo {
@@ -440,30 +440,30 @@ body {
   }
 
   .nav-bar .social-icon {
-    width: 24px;
-    height: 24px;
-    margin: 0 5px;
+    width: 22px; /* Slightly smaller */
+    height: 22px;
+    margin: 0 4px; /* Tighter margin */
   }
 
   .nav-bar .version {
     font-size: 0.9rem;
-    margin: 0 6px;
+    margin: 0 5px;
   }
 
   .nav-bar .star-slider {
-    width: 70px;
-    margin: 0 6px;
+    width: 60px; /* Reduced to save space */
+    margin: 0 5px;
   }
 
   .nav-bar .battery-status {
-    font-size: 1rem;
-    margin: 0 6px;
+    font-size: 0.9rem; /* Reduced to save space */
+    margin: 0 5px;
   }
 
   .nav-bar .live-clock {
-    font-size: 1rem;
+    font-size: 0.9rem;
     width: 80px;
-    margin: 0 6px;
+    margin: 0 5px;
   }
 }
 
