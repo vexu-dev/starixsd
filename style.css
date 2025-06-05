@@ -265,7 +265,7 @@ body {
   color: #A020F0;
   text-shadow: 0 0 10px #8F00FF;
   width: 120px;
-  margin: 10 15px;
+  margin: 10px 15px;
   text-align: center;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -280,7 +280,7 @@ body {
   font-size: 1.1rem;
   color: #A020F0;
   text-shadow: 0 0 8px #8F00FF;
-  margin: 10 15px;
+  margin: 10px 15px;
   transition: transform 0.3s ease, filter 0.3s ease;
   white-space: nowrap;
 }
@@ -393,70 +393,56 @@ body {
 }
 
 /* Responsive adjustments for Chromebooks and smaller screens */
-@media (max-width: 1366px) {
+@media (max-width: 1024px) {
   .nav-bar {
-    padding: 0 20px;
-    height: 60px;
-    flex-wrap: nowrap;
+    height: 56px;
+    padding: 0 10px;
     justify-content: space-between;
   }
 
-  .nav-bar .left-group {
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .nav-bar .right-group {
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 10px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
   .nav-bar .logo {
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
   }
 
   .nav-bar h2 {
-    font-size: 1.4rem;
-    margin: 0 10px;
+    font-size: 1.1rem;
+    margin-left: 8px;
   }
 
   .nav-bar .separator {
-    font-size: 1.4rem;
-    margin: 0 10px;
+    font-size: 1.2rem;
+    margin: 0 8px;
   }
 
   .nav-bar .slogan {
-    max-width: 350px;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    max-width: 200px;
   }
 
   .nav-bar .nav-item {
-    font-size: 1rem;
-    margin: 0 10px;
+    font-size: 0.9rem;
+    margin: 0 6px;
   }
 
   .nav-bar .social-icon {
-    width: 26px;
-    height: 26px;
+    width: 24px;
+    height: 24px;
+    margin: 0 6px;
   }
 
   .nav-bar .battery-status,
   .nav-bar .live-clock,
   .nav-bar .version {
-    font-size: 1rem;
-    margin: 0 8px;
+    font-size: 0.9rem;
+    margin: 0 6px;
   }
 
   .nav-bar .star-slider {
-    width: 80px;
-    margin: 0 10px;
+    width: 60px;
+    margin: 0 6px;
   }
+}
 
   .games-grid {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -482,7 +468,7 @@ body {
     width: 250px;
     font-size: 0.95rem;
   }
-}
+
 
 
 @media (max-width: 900px) {
