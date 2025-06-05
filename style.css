@@ -409,62 +409,61 @@ body {
   .nav-bar .right-group {
     flex-shrink: 1;
     min-width: 0;
-    margin-left: 3px;
+    margin-left: 3px; /* Unchanged */
   }
 
   .nav-bar .slogan {
-    max-width: 450px; /* Increased from 350px */
-    font-size: 0.9rem;
+    max-width: 400px; /* Adjusted to prevent early ellipsis while minimizing layout shift */
+    font-size: 0.9rem; /* Unchanged */
   }
 
-  /* Other unchanged rules */
   .nav-bar h2 {
-    font-size: 1.2rem;
-    margin-left: 6px;
-    margin-right: 6px;
+    font-size: 1.2rem; /* Unchanged */
+    margin-left: 6px; /* Unchanged */
+    margin-right: 6px; /* Unchanged */
   }
 
   .nav-bar .separator {
-    font-size: 1.2rem;
-    margin: 0 6px;
+    font-size: 1.2rem; /* Unchanged */
+    margin: 0 6px; /* Unchanged */
   }
 
   .nav-bar .nav-item {
-    font-size: 0.9rem;
-    margin: 0 5px;
+    font-size: 0.9rem; /* Unchanged */
+    margin: 0 5px; /* Unchanged */
   }
 
   .nav-bar .logo {
-    width: 32px;
-    height: 32px;
-    margin-left: 0;
+    width: 32px; /* Unchanged */
+    height: 32px; /* Unchanged */
+    margin-left: 0; /* Unchanged */
   }
 
   .nav-bar .social-icon {
-    width: 22px;
-    height: 22px;
-    margin: 0 4px;
+    width: 22px; /* Unchanged */
+    height: 22px; /* Unchanged */
+    margin: 0 4px; /* Unchanged */
   }
 
   .nav-bar .version {
-    font-size: 0.9rem;
-    margin: 0 5px;
+    font-size: 0.9rem; /* Unchanged */
+    margin: 0 5px; /* Unchanged */
   }
 
   .nav-bar .star-slider {
-    width: 60px;
-    margin: 0 5px;
+    width: 60px; /* Unchanged */
+    margin: 0 5px; /* Unchanged */
   }
 
   .nav-bar .battery-status {
-    font-size: 0.9rem;
-    margin: 0 5px;
+    font-size: 0.9rem; /* Unchanged */
+    margin: 0 5px; /* Unchanged */
   }
 
   .nav-bar .live-clock {
-    font-size: 0.9rem;
-    width: 80px;
-    margin: 0 5px;
+    font-size: 0.9rem; /* Unchanged */
+    width: 80px; /* Unchanged */
+    margin: 0 5px; /* Unchanged */
   }
 }
 
