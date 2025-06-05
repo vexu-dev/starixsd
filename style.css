@@ -393,6 +393,7 @@ body {
 }
 
 /* Responsive adjustments for Chromebooks and smaller screens */
+/* Responsive adjustments for Chromebooks and smaller screens */
 @media (max-width: 1366px) {
   .nav-bar {
     padding: 0 8px; /* Tighter padding */
@@ -401,26 +402,25 @@ body {
     min-height: 60px; /* Maintain minimum height */
   }
 
-.nav-bar .left-group {
-  flex: 2 1 auto; /* Allow more space */
-  min-width: 0;   /* Prevent overflow */
-}
+  .nav-bar .left-group {
+    flex: 2 1 auto; /* Allow more space */
+    min-width: 0;   /* Prevent overflow */
+  }
 
-.nav-bar .right-group {
-  flex: 1 1 auto;  /* Allow shrinking */
-  min-width: 0;
-  margin-left: 3px;
-}
+  .nav-bar .right-group {
+    flex: 1 1 auto;  /* Allow shrinking */
+    min-width: 0;
+    margin-left: 3px;
+  }
 
-.nav-bar .slogan {
-  max-width: 100%; /* Let it expand as needed */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 0.9rem;
-  flex: 1 1 auto; /* Allow growing/shrinking */
-}
-
+  .nav-bar .slogan {
+    flex: 1 1 auto; /* Allow growing/shrinking */
+    font-size: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: none; /* Remove max-width to allow natural expansion */
+  }
 
   .nav-bar h2 {
     font-size: 1.2rem;
@@ -481,7 +481,13 @@ body {
   }
 
   .nav-bar .slogan {
-    display: none; /* Hide slogan to save space */
+    display: block; /* Restore slogan visibility */
+    flex: 1 1 auto; /* Allow growing/shrinking */
+    font-size: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: none; /* Remove max-width to allow natural expansion */
   }
 
   .nav-bar h2 {
@@ -531,72 +537,6 @@ body {
     font-size: 0.9rem;
     width: 70px;
     margin: 0 5px;
-  }
-
-  .nav-bar .right-group {
-    margin-left: 2px;
-  }
-}
-
-@media (max-width: 600px) {
-  .nav-bar {
-    padding: 0 5px;
-    flex-wrap: wrap;
-    height: auto;
-    min-height: 60px;
-  }
-
-  .nav-bar .slogan {
-    display: none; /* Hide slogan */
-  }
-
-  .nav-bar h2 {
-    font-size: 0.9rem;
-    margin-left: 4px;
-    margin-right: 4px;
-  }
-
-  .nav-bar .separator {
-    font-size: 0.9rem;
-    margin: 0 4px;
-  }
-
-  .nav-bar .nav-item {
-    font-size: 0.8rem;
-    margin: 0 4px;
-  }
-
-  .nav-bar .logo {
-    width: 25px;
-    height: 25px;
-    margin-left: 0;
-  }
-
-  .nav-bar .social-icon {
-    width: 18px;
-    height: 18px;
-    margin: 0 3px;
-  }
-
-  .nav-bar .version {
-    font-size: 0.7rem;
-    margin: 0 4px;
-  }
-
-  .nav-bar .star-slider {
-    width: 50px;
-    margin: 0 4px;
-  }
-
-  .nav-bar .battery-status {
-    font-size: 0.8rem;
-    margin: 0 4px;
-  }
-
-  .nav-bar .live-clock {
-    font-size: 0.8rem;
-    width: 60px;
-    margin: 0 4px;
   }
 
   .nav-bar .right-group {
