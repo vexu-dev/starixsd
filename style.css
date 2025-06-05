@@ -265,7 +265,7 @@ body {
   color: #A020F0;
   text-shadow: 0 0 10px #8F00FF;
   width: 120px;
-  margin: 10px 15px;
+  margin: 10 15px;
   text-align: center;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -280,7 +280,7 @@ body {
   font-size: 1.1rem;
   color: #A020F0;
   text-shadow: 0 0 8px #8F00FF;
-  margin: 10px 15px;
+  margin: 10 15px;
   transition: transform 0.3s ease, filter 0.3s ease;
   white-space: nowrap;
 }
@@ -393,83 +393,84 @@ body {
 }
 
 /* Responsive adjustments for Chromebooks and smaller screens */
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   .nav-bar {
-    height: 56px;
-    padding: 0 10px;
-    justify-content: space-between;
+    padding: 0 8px; /* Tighter padding */
+    flex-wrap: wrap; /* Allow wrapping to prevent overflow */
+    height: auto; /* Allow height to adjust */
+    min-height: 60px; /* Maintain minimum height */
+  }
+
+.nav-bar .left-group {
+  flex: 2 1 auto; /* Allow more space */
+  min-width: 0;   /* Prevent overflow */
+}
+
+.nav-bar .right-group {
+  flex: 1 1 auto;  /* Allow shrinking */
+  min-width: 0;
+  margin-left: 3px;
+}
+
+.nav-bar .slogan {
+  max-width: 100%; /* Let it expand as needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  flex: 1 1 auto; /* Allow growing/shrinking */
+}
+
+
+  .nav-bar h2 {
+    font-size: 1.2rem;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  .nav-bar .separator {
+    font-size: 1.2rem;
+    margin: 0 6px;
+  }
+
+  .nav-bar .nav-item {
+    font-size: 1rem;
+    margin: 0 6px;
   }
 
   .nav-bar .logo {
     width: 32px;
     height: 32px;
-  }
-
-  .nav-bar h2 {
-    font-size: 1.1rem;
-    margin-left: 8px;
-  }
-
-  .nav-bar .separator {
-    font-size: 1.2rem;
-    margin: 0 8px;
-  }
-
-  .nav-bar .slogan {
-    font-size: 0.9rem;
-    max-width: 200px;
-  }
-
-  .nav-bar .nav-item {
-    font-size: 0.9rem;
-    margin: 0 6px;
+    margin-left: 0;
   }
 
   .nav-bar .social-icon {
     width: 24px;
     height: 24px;
-    margin: 0 6px;
+    margin: 0 5px;
   }
 
-  .nav-bar .battery-status,
-  .nav-bar .live-clock,
   .nav-bar .version {
     font-size: 0.9rem;
     margin: 0 6px;
   }
 
   .nav-bar .star-slider {
-    width: 60px;
+    width: 70px;
+    margin: 0 6px;
+  }
+
+  .nav-bar .battery-status {
+    font-size: 1rem;
+    margin: 0 6px;
+  }
+
+  .nav-bar .live-clock {
+    font-size: 1rem;
+    width: 80px;
     margin: 0 6px;
   }
 }
-
-  .games-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
-    padding: 90px 15px 80px;
-  }
-
-  .game-item img {
-    width: 180px;
-    height: 180px;
-  }
-
-  .game-item .game-title {
-    font-size: 0.95rem;
-  }
-
-  .search-bar {
-    top: 15px;
-    transform: translateX(-50%) scale(0.95);
-  }
-
-  .search-input {
-    width: 250px;
-    font-size: 0.95rem;
-  }
-
-
 
 @media (max-width: 900px) {
   .nav-bar {

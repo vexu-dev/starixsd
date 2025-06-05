@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'No limits, just space—unblocked and infinite.',
     'Unlock the cosmos, your journey is unblocked.',
     'Unblocked vibes, explore the digital galaxy.',
-    'Soar past barriers, your space journey starts now.',
+    'Soar past barriers, your journey starts now.',
     'Unblocked access, ride the stellar waves.',
     'Free the universe, unblocked exploration awaits.',
     'Unblocked horizons, your cosmic path is clear.'
@@ -65,6 +65,15 @@ document.addEventListener('DOMContentLoaded', () => {
           width: childWidth
         });
       });
+      // Calculate available space and set dynamic margin for right-group
+      const rightGroup = document.querySelector('.nav-bar .right-group');
+      if (rightGroup) {
+        const leftGroupWidth = document.querySelector('.nav-bar .left-group')?.offsetWidth || 0;
+        const availableSpace = navWidth - totalChildrenWidth;
+        const dynamicMargin = Math.min(50, Math.max(20, availableSpace / 2)); // Margin between 20px and 50px
+        rightGroup.style.marginLeft = `${dynamicMargin}px`;
+        console.log(`Right-group margin-left set to: ${dynamicMargin}px`);
+      }
       console.log(`Nav-bar width: ${navWidth}px, Total children width: ${totalChildrenWidth}px at`, new Date().toLocaleTimeString());
       console.log('Child widths:', childWidths);
       if (totalChildrenWidth > navWidth) {
