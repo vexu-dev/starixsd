@@ -395,28 +395,29 @@ body {
 /* Responsive adjustments for Chromebooks and smaller screens */
 @media (max-width: 1366px) {
   .nav-bar {
-    padding: 0 8px; /* Tighter padding */
-    flex-wrap: wrap; /* Allow wrapping to prevent overflow */
-    height: auto; /* Allow height to adjust */
-    min-height: 60px; /* Maintain minimum height */
+    padding: 0 8px; /* Unchanged */
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 60px;
   }
 
   .nav-bar .left-group {
-    flex-shrink: 1; /* Allow shrinking */
-    min-width: 0; /* Prevent overflow */
+    flex-shrink: 1;
+    min-width: 0;
   }
 
   .nav-bar .right-group {
-    flex-shrink: 1; /* Allow shrinking */
-    min-width: 0; /* Prevent overflow */
-    margin-left: 3px; /* Tighter margin */
+    flex-shrink: 1;
+    min-width: 0;
+    margin-left: 3px;
   }
 
   .nav-bar .slogan {
-    max-width: 350px; /* Increased to show more text */
-    font-size: 0.9rem; /* Smaller font */
+    max-width: 450px; /* Increased from 350px */
+    font-size: 0.9rem;
   }
 
+  /* Other unchanged rules */
   .nav-bar h2 {
     font-size: 1.2rem;
     margin-left: 6px;
@@ -429,8 +430,8 @@ body {
   }
 
   .nav-bar .nav-item {
-    font-size: 0.9rem; /* Reduced to save space */
-    margin: 0 5px; /* Tighter margin */
+    font-size: 0.9rem;
+    margin: 0 5px;
   }
 
   .nav-bar .logo {
@@ -440,9 +441,9 @@ body {
   }
 
   .nav-bar .social-icon {
-    width: 22px; /* Slightly smaller */
+    width: 22px;
     height: 22px;
-    margin: 0 4px; /* Tighter margin */
+    margin: 0 4px;
   }
 
   .nav-bar .version {
@@ -451,12 +452,12 @@ body {
   }
 
   .nav-bar .star-slider {
-    width: 60px; /* Reduced to save space */
+    width: 60px;
     margin: 0 5px;
   }
 
   .nav-bar .battery-status {
-    font-size: 0.9rem; /* Reduced to save space */
+    font-size: 0.9rem;
     margin: 0 5px;
   }
 
