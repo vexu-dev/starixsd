@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
     'Unblocked vibes, explore the digital galaxy.',
     'Soar past barriers, your journey starts now.',
     'Unblocked access, ride the stellar waves.',
-    'Free the universe, unblocked exploration awaits.',
-    'Unblocked horizons, your cosmic path is clear.'
+    'Free the universe, unblocked space awaits.',
+    'Unblocked horizons, your path is clear.'
   ];
 
   // Debug: Log arrays and elements
